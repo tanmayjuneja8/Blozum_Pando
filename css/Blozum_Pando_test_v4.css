@@ -124,7 +124,7 @@
 
 .blozum_container {
   display: flex;
-  z-index: 999;
+  z-index: 100000;
   position: fixed;
   opacity: 0;
   visibility: hidden;
