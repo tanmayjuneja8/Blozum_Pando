@@ -109,14 +109,6 @@
   width: 90%;
 }
 
-:root {
-  --text: #2b3044;
-  --font-size: 10px;
-  --duration: 0.44s;
-  --duration-line: 0.84s;
-  font-family: "Georama", Sans-serif;
-}
-
 .blozum_button-35,
 .blozum_button-35:hover {
   background-color: #fff;
@@ -239,12 +231,6 @@
   font-weight: 700;
 }
 
-* {
-  padding: 0;
-  --secondaryGradient: linear-gradient(180deg, #1f5cd5 0%, #063ac3 100%);
-  --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-  --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
-}
 
 .blozum_chatbox {
   position: absolute;
@@ -314,19 +300,20 @@
 }
 
 .blozum_chatbox__header {
-  background: var(--secondaryGradient);
+  background: linear-gradient(180deg, #1f5cd5 0%, #063ac3 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 15px 20px;
+  padding: 17px 20px;
   border-radius: 20px;
-  box-shadow: var(--primaryBoxShadow);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);;
 }
 
 .blozum_messages__item--operator {
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.2) 0 3px 5px;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 1.4;  
   border-top-right-radius: 4px;
   border-top-left-radius: 16px;
 }
@@ -334,7 +321,8 @@
 .blozum_messages__item--typing,
 .blozum_messages__item--visitor {
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.2) 0 3px 5px;
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 1.4;
   border-top-right-radius: 16px;
   border-top-left-radius: 4px;
 }
@@ -370,7 +358,7 @@
   margin-top: 10px;
   background: #fff;
   color: #000;
-  padding: 10px 12px;
+  padding: 17px 20px;
   max-width: 70%;
 }
 
@@ -397,7 +385,7 @@
   justify-content: space-between;
   padding: 12px 8px;
   background: 0 0;
-  box-shadow: var(--secondaryBoxShadow);
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -657,19 +645,15 @@
 .visitor_menu_BLZ,
 .after_submission_BLZ {
   position: relative;
-  margin-top: 10px;
+  margin-top: 1px;
   margin-right: auto;
   margin-left: auto;
   font-weight: bold;
   font-size: 16px;
   background: #fff;
   color: #000;
-  padding: 10px 12px;
-  width: 90%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
   border-radius: 10px;
-  padding: 20px;
-  background-color: #f2f2f2;
   z-index: 1000;
 }
 
@@ -689,7 +673,7 @@
 }
 
 .blozum_message-reaction {
-  display: none;
+  display: contents;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -740,9 +724,6 @@
   outline: none;
 }
 
-.blozum_messages__item--visitor:hover .blozum_message-reaction {
-  display: contents;
-}
 
 #blz_form_error {
   background-color: #ffcccc;
@@ -799,6 +780,8 @@
 
 .action-btn {
   border: none;
+  touch-action: manipulation;
+  cursor: pointer;
   color: #063ac3;
   padding: 0.4rem 0.8rem;
   border-radius: 15px;
@@ -826,7 +809,6 @@
   color: white;
   transition: all 0.3s ease-in-out;
   outline: none;
-  transform: scale(1.1);
 }
 
 .action-btn:active {
@@ -864,7 +846,7 @@
   outline: none;
 }
 
-.buynow:hover {
+.buynow:hover, .hdcarousel_item:hover {
   background-color: #063ac3;
   color: "white";
   outline: none;
@@ -929,8 +911,8 @@
   padding: 10px;
   color: #fff;
   margin: 5px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 1.5;
   border-top-right-radius: 4px;
   border-top-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -1083,8 +1065,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s, transform 0.2s;
-  border-bottom-left-radius: 24px;
+  transition: background-color 0.3s, transform 0.2s; 
+   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 16px;
   border-top-right-radius: 4px;
@@ -1144,4 +1126,100 @@
 .source_button_small:active {
   transform: scale(0.95);
   /* Contract button on click for tactile feedback */
+}
+
+.hdcarousel_wrapper {
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  grid-gap: 0.4em;
+  position: relative;
+  line-height: 1;
+}
+
+.hdcarousel {
+  position: relative;
+  overflow-x: clip;
+}
+.hdcarousel_item {
+  display: flex;
+  align-items: center;
+  left: 5px;
+  /* Centers text vertically */
+  /* Centers text horizontally */
+  position: relative;
+  width: 60%;
+  min-width: 120px;
+  /* Adjust based on your needs */
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  top: 0;
+  transition: all ease-in-out 800ms;
+  box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
+  flex: 0 0 auto;
+  margin-right: 10px;
+  overflow: hidden;
+  /* Ensures text doesn't overflow */
+  white-space: nowrap;
+  /* Prevents text wrapping */
+  text-overflow: ellipsis;
+  /* Adds ellipsis if text overflows */
+}
+.blz_scrollable-container {
+  display: flex;
+  /* Aligns children (buttons) in a row */
+  overflow-x: auto;
+  /* Enables horizontal scrolling */
+  white-space: nowrap;
+  /* Ensures items stay in a single line */
+  scroll-behavior: smooth;
+  /* Smooth scrolling */
+}
+
+/* Optional: Add styling to remove scrollbar visibility but keep functionality */
+.blz_scrollable-container::-webkit-scrollbar {
+  display: none;
+  /* Hides scrollbar for WebKit browsers */
+}
+
+.blz_scrollable-container {
+  -ms-overflow-style: none;
+  /* Hides scrollbar for IE and Edge */
+  scrollbar-width: none;
+  /* Hides scrollbar for Firefox */
+}
+#blz_activeItem {
+  background-color: #fff;
+  top: -1rem;
+}
+.hdcarousel_item:hover,
+#blz_activeItem:hover {
+  background-color: #063ac3;
+  color: #fff;
+  outline: none;
+}
+.hdcarousel_nav {
+  width: max-content;
+  margin: 0 auto;
+  z-index: 999000;
+
+}
+
+.hdcarousel_nav_item {
+  display: inline-block;
+  padding: 0.4em;
+  box-shadow: 0px 0px 6px #d5cbca, 0px 0px 6px #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  margin: 0 0.2em;
+  border-radius: 8px;
+  /* transition: all ease-in-out 300ms; */
+  transition: background-color 0.3s, transform 0.1s;
+  z-index: 999;
+}
+
+.hdcarousel_nav_item:hover {
+  background-color: #fff;
 }
