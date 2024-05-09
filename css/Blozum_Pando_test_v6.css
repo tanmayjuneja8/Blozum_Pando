@@ -10,7 +10,7 @@
 
 .blozum_button-35:hover,
 .blozum_chatbox_button button:hover {
-  box-shadow: #063ac3 0 0 0 3px, transparent 0 0 0 0;
+  box-shadow: #134842 0 0 0 3px, transparent 0 0 0 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -173,8 +173,8 @@
 
 .send__button_BLZ {
   border-radius: 50%;
-  background-color: #063ac3;
-  color: #063ac3;
+  background-color: #134842;
+  color: #134842;
   width: calc(3em + 2px);
   height: calc(3em + 2px);
   display: flex;
@@ -196,12 +196,12 @@
 }
 
 .send__button_BLZ:hover {
-  background-color: rgba(6, 58, 195, 0.9);
+  background-color:#426c67;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.4) 0 3px 9px;
 }
 
 .send__button_BLZ:active {
-  background-color: rgba(6, 58, 195, 0.9);
+  background-color: #426c67;
   box-shadow: #ccc 0 0 0 3px, transparent 0 0 0 0;
 }
 
@@ -211,7 +211,7 @@
   background: #e1edff;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
   width: 100%;
-  color: #063ac3;
+  color: #134842;
   flex: 1 1 auto;
   justify-content: center;
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.2) 0 3px 5px;
@@ -300,7 +300,7 @@
 }
 
 .blozum_chatbox__header {
-  background: linear-gradient(180deg, #1f5cd5 0%, #063ac3 100%);
+  background: linear-gradient(180deg, #426c67 0%, #134842 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -373,8 +373,8 @@
   margin-left: auto;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 16px;
-  background: -webkit-linear-gradient(180deg, #1f5cd5 0%, #063ac3 100%);
-  background: linear-gradient(180deg, #1f5cd5 0%, #063ac3 100%);
+  background: -webkit-linear-gradient(180deg, #426c67 0%, #134842 100%);
+  background: linear-gradient(180deg, #426c67 0%, #134842 100%);
   color: #fff;
 }
 
@@ -410,14 +410,14 @@
 .blozum_chatbox__button button {
   padding: 5px;
   background: #fff;
-  border-radius: 50px 0 50px 50px;
+  border-radius: 52px 0 52px 52px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   outline: none;
 }
 
 .blozum_chatbox_button button:hover {
-  background-color: #063ac3;
+  background-color: #134842;
   color: #fff;
 }
 
@@ -574,7 +574,7 @@
 .blz_s {
   width: 10px;
   height: 10px;
-  background-color: #063ac3;
+  background-color: #134842;
   opacity: 0.8;
   display: inline-block;
   margin: 1px;
@@ -614,7 +614,7 @@
 
 .home_button_BLZ {
   border-radius: 50%;
-  background-color: #063ac3;
+  background-color: #134842;
   color: #fff;
   width: calc(3em + 2px);
   height: calc(3em + 2px);
@@ -707,10 +707,10 @@
 /* Highlight the active (enabled) button */
 .blz_active,
 .blz_active:focus {
-  background-color: #063ac3;
+  background-color: #134842;
   /* Blue background for active state */
   color: white;
-  border-color: #063ac3;
+  border-color: #134842;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border-width: thin;
   outline: none;
@@ -718,7 +718,7 @@
 
 .blozum_thumb-down:hover,
 .blozum_thumb-up:hover {
-  background-color: #063ac3;
+  background-color: #134842;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.1);
@@ -783,7 +783,7 @@
   border: none;
   touch-action: manipulation;
   cursor: pointer;
-  color: #063ac3;
+  color: #134842;
   padding: 0.4rem 0.8rem;
   border-radius: 15px;
   outline: none;
@@ -806,7 +806,7 @@
 } */
 
 .action-btn:hover {
-  background-color: #063ac3;
+  background-color: #134842;
   color: white;
   transition: all 0.3s ease-in-out;
   outline: none;
@@ -836,7 +836,7 @@
 
 .stoodi_links {
   all: unset;
-  color: #063ac3;
+  color: #134842;
   font-weight: bold;
   cursor: pointer;
 }
@@ -848,13 +848,13 @@
 }
 
 .buynow:hover, .hdcarousel_item:hover {
-  background-color: #063ac3;
+  background-color: #134842;
   color: "white";
   outline: none;
 }
 
 .buynow:active {
-  background-color: #063ac3;
+  background-color: #134842;
   color: "white";
   outline: none;
 }
@@ -903,12 +903,12 @@
 
 .blz_icebreaker:hover {
   cursor: pointer;
-  background: #0f29d3;
+  background: #426c67;
   color: #f2f2f2;
 }
 
 .blz_init_icebreaker {
-  background: linear-gradient(180deg, #1f5cd5 0%, #063ac3 100%);
+  background: linear-gradient(180deg, #426c67 0%, #134842 100%);
   padding: 10px;
   color: #fff;
   margin: 5px;
@@ -923,7 +923,7 @@
 }
 
 .blz_init_icebreaker:hover {
-  background: linear-gradient(180deg, #1f5cd5 0%, #063ac3 100%);
+  background: linear-gradient(180deg, #134842 0%, #426c67 100%);
   cursor: pointer;
   transform: scale(1.05);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
@@ -938,13 +938,14 @@
   transform: scale(0.9);
 }
 
-.blz_init_icebreaker .icebreaker_element_icon {
+.blz_init_icebreaker .icebreaker_element {
   position: absolute;
   margin-top: auto;
   align-self: flex-start;
   color: #fff;
+  padding: 2px;
   border-radius: 32px;
-  height: 32px;
+  max-height: 32px;
   width: 32px;
   display: flex;
   align-items: center;
@@ -1197,7 +1198,7 @@
 }
 .hdcarousel_item:hover,
 #blz_activeItem:hover {
-  background-color: #063ac3;
+  background-color: #134842;
   color: #fff;
   outline: none;
 }
