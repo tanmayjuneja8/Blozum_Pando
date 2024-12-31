@@ -232,6 +232,24 @@
   margin: 0 0 0 8px;
 }
 
+.blozum_button-32{
+  width: max-content;
+  width: calc(3em + 2px);
+  height: calc(3em + 2px);
+  border-radius: 8px;
+  opacity: 0px;
+  border: 1px solid #134842;
+  background: transparent;
+  
+}
+
+.blozum_button-32:hover{
+  transform: scale(1.03);
+}
+.blozum_button-32:active{
+  transform: scale(0.9);
+}
+
 #BLZ_input {
   flex-grow: 1;
   margin-right: 8px; /* Space between input and icon */
@@ -1013,16 +1031,22 @@
   outline: none;
 }
 
-.blozum_button-3 {
+.blozum_button-3,.blozum_button-32 {
   transition: all 0.3s;
 }
 
 .blozum_button-3:hover {
+  border-color: #42B02B;
+  background: #42B02B;
   transform: scale(1.03);
+  color: #fff;
 }
 
 .blozum_button-3:active {
+  border-color: #42B02B;
+  background: #42B02B;
   transform: scale(0.9);
+  color: #fff;
 }
 
 .blozum_mobile_view_close_btn {
