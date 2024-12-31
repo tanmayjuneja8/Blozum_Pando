@@ -1,3 +1,4 @@
+
 .blozum_chatbox,
 .blozum_chatbox * {
   font-family: "Georama", Sans-serif;
@@ -10,7 +11,7 @@
 
 /* .blozum_button-35:hover,
 .blozum_chatbox_button button:hover {
-  box-shadow: #184870 0 0 0 3px, transparent 0 0 0 0;
+  box-shadow: #348225 0 0 0 3px, transparent 0 0 0 0;
 } */
 
 @media only screen and (min-width: 1024px) {
@@ -197,17 +198,17 @@
 
 .blozum_button-35 {
   align-items: center;
-  border-radius: 15px;
+  border-radius: 100%;
   /* box-shadow: transparent 0 0 0 6px, rgba(18, 18, 18, 0.4) 0 6px 20px; */
   cursor: pointer;
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   font-family: "Georama", Sans-serif;
   font-size: 1rem;
   font-weight: 450;
   justify-content: center;
   outline: 0;
   text-decoration: none;
-  border: 0;
+  border: none;
   user-select: none;
   -webkit-user-select: none;
 }
@@ -215,7 +216,7 @@
 .send__button_BLZ {
   /* border-radius: 50%; */
   background-color: transparent;
-  /* color: #184870; */
+  /* color: #348225; */
   width: calc(3em + 2px);
   height: calc(3em + 2px);
   display: flex;
@@ -242,31 +243,37 @@
 }
 
 
-.send__button_BLZ:hover {
+/* .send__button_BLZ:hover {
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.4) 0 3px 9px;
-}
+} */
 
-.send__button_BLZ:active {
+/* .send__button_BLZ:active {
   box-shadow: #ccc 0 0 0 2px, transparent 0 0 0 0;
-}
+} */
 
 .blozum_button-3 {
-  align-items: center;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
-  width: 100%;
-  padding: 6px 10px 6px 10px;
+  width: 99px;
+  height: 40px;
+  padding: 8px 12px 8px 12px;
   gap: 10px;
-  cursor: pointer;
-  color: #000;
-  flex: 1 1 auto;
-  border: 0;
-  user-select: none;
-  -webkit-user-select: none;
+  border-radius: 8px;
+  opacity: 0px;
+  border: 1px solid #134842;
+  background: transparent;
+  /* font-family: Inter; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #134842;
 }
 
-.blozum_button-3:hover {
+/* .blozum_button-3:hover {
   box-shadow: transparent 0 0 0 3px, rgba(36, 36, 36, 0.4) 0 3px 5px;
-}
+} */
 
 .property-value {
   margin-top: 5px;
@@ -300,6 +307,13 @@
   text-align: right;
   position: fixed;
   z-index: 99999999999;
+  /* full circular button */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .send__button {
@@ -383,10 +397,20 @@
 }
 
 .visitor_menu_BLZ {
-  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.2) 0 3px 5px;
+  /* box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.2) 0 3px 5px; */
   font-size: 15px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  /* border-top-right-radius: 20px; */
+  /* border-top-left-radius: 20px; */
+  color: #134847B2;
+  background: #EFEFEF80;
+  padding: 20px 16px 20px 16px;
+  gap: 10px;
+  border-radius: 8px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px 10px 30px;
 }
 
 .blozum_chatbox__image--header {
@@ -419,7 +443,7 @@
   /* box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.1); */
   border-radius: 8px;
   margin: 5px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   position: sticky;
   bottom: 0;
   height: 10.5%;
@@ -433,23 +457,24 @@
   align-items: center;
   justify-content: center;
   /* gap: 10px; */
-  border-radius: 16px;
+  height: 44px;
+  border-radius: 8px;
   border: 1px solid #D0D0D0;
   background: #fff;
   opacity: 0px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  /* padding-top: 8px; */
+  /* padding-bottom: 8px; */
 }
 
 .blozum_chatbox__footer .blz_input {
   width: 90%;
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 8px;
   border: 1px;
   font-size: 14px;
   text-align: left;
   color: #000;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); */
   flex-grow: 1;
 }
 
@@ -471,7 +496,7 @@
 
 .blozum_chatbox__button button {
   padding: 0px;
-  /* background: #184870; */
+  /* background: #348225; */
   /* border-radius: 72px 0 72px 72px; */
   /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); */
   cursor: pointer;
@@ -479,7 +504,7 @@
 }
 
 .blozum_chatbox_button button:hover {
-  /* background-color: #184870; */
+  /* background-color: #348225; */
   color: #fff;
 }
 
@@ -635,7 +660,7 @@
 .blz_s {
   width: 10px;
   height: 10px;
-  background-color: #184870;
+  background-color: #348225;
   opacity: 0.8;
   display: inline-block;
   margin: 1px;
@@ -675,7 +700,7 @@
 
 .home_button_BLZ {
   border-radius: 50%;
-  background-color: #184870;
+  background-color: #348225;
   color: #fff;
   width: calc(3em + 2px);
   height: calc(3em + 2px);
@@ -709,10 +734,10 @@
   margin: 10px auto;
   font-weight: bold;
   font-size: 16px;
-  background: #fff;
-  color: #000;
-  width: 80%;
-  border-radius: 10px;
+  /* background: #fff; */
+  /* color: #000; */
+  /* width: 80%; */
+  /* border-radius: 10px; */
   z-index: 1000;
   display: flex;
   /* Added for vertical centering */
@@ -720,7 +745,7 @@
   /* Centers content horizontally */
   align-items: center;
   /* Centers content vertically */
-  padding: 10px;
+  /* padding: 10px; */
   /* Optional, for some internal spacing */
 }
 
@@ -740,18 +765,59 @@
 
 .flex-blozum_container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin-top: 24px;
+  margin-bottom: 15px;
 }
 
 .blz_input {
-  width: 100%;
-  border: none;
-  padding: 10px;
-  border-radius: 30px;
+  border: none;             /* Remove border */
+  outline: none;            /* Remove outline on focus */
+  background: transparent;  /* Make background transparent */
+  padding: 0;               /* Remove padding */
+  margin: 0;                /* Remove margin */
+  font: inherit;            /* Inherit font properties from parent */
+  color: inherit;           
+  width: auto;              /* Adjust width as needed */
+  min-width: 100px;         /* Set a minimum width */
+  cursor: text;  
+  width: 300px;
+  height: 32px;
+  padding: 4px 10px 4px 10px;
+  gap: 10px;
+  border-color: #134847B2;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  opacity: 0px;
+  outline: none;
+  margin: 0px 0;
+  color: #134847B2; 
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
   text-align: left;
-  color: #000;
-  margin: 0 0 6px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.blz_input::placeholder {
+  color: #134847B2; 
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.blz_input:focus, .blz_input:hover {
+  outline: none;
 }
 
 .blozum_message-reaction {
@@ -771,7 +837,7 @@
 .blozum_thumb-down {
   cursor: pointer;
   outline: none;
-  border-color: #35699f;
+  border-color: #348225;
   padding: 6px 10px 6px 10px;
   gap: 10px;
   border-radius: 8px;
@@ -793,7 +859,7 @@
 
 .blozum_thumb-down:hover,
 .blozum_thumb-up:hover {
-  background-color: #184870;
+  background-color: #348225;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.1);
@@ -803,12 +869,12 @@
 /* Highlight the active (enabled) button */
 .blz_active,
 .blz_active:focus {
-  background-color: #184870;
+  background-color: #348225;
   /* Blue background for active state */
   color: white;
-  border-color: #184870;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border-width: thin;
+  border-color: #348225;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); */
+  /* border-width: thin; */
   outline: none;
 }
 
@@ -870,7 +936,7 @@
   border: none;
   touch-action: manipulation;
   cursor: pointer;
-  color: #184870;
+  color: #348225;
   padding: 0.4rem 0.8rem;
   border-radius: 15px;
   outline: none;
@@ -893,7 +959,7 @@
 } */
 
 .action-btn:hover {
-  background-color: #184870;
+  background-color: #348225;
   color: white;
   transition: all 0.3s ease-in-out;
   outline: none;
@@ -923,7 +989,7 @@
 
 .stoodi_links {
   all: unset;
-  color: #184870;
+  color: #348225;
   font-weight: bold;
   cursor: pointer;
 }
@@ -936,13 +1002,13 @@
 
 .buynow:hover,
 .hdcarousel_item:hover {
-  background-color: #184870;
+  background-color: #348225;
   color: "white";
   outline: none;
 }
 
 .buynow:active {
-  background-color: #184870;
+  background-color: #348225;
   color: "white";
   outline: none;
 }
@@ -989,7 +1055,7 @@
 
 .blz_icebreaker:hover {
   cursor: pointer;
-  /* background: #184870; */
+  /* background: #348225; */
   background: #348225;
   color: #f2f2f2;
 }
@@ -1020,10 +1086,10 @@
   background: #42b02b;
   border: 1px solid #42b02b;
   cursor: pointer;
-  transform: scale(1.02);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  /* transform: scale(1.02); */
+  /* box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(0, 0, 0, 0.2),
-    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    0 8px 10px -6px rgba(0, 0, 0, 0.1); */
   color: #fff;
 }
 
@@ -1146,7 +1212,7 @@
 }
 
 .floating_ice_breaker:hover {
-  background-color: #0056b3;
+  background-color: #348225;
   transform: translateY(-2px);
 }
 
@@ -1269,7 +1335,7 @@
 }
 .hdcarousel_item:hover,
 #blz_activeItem:hover {
-  background-color: #184870;
+  background-color: #348225;
   color: #fff;
   outline: none;
 }
