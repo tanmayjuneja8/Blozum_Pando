@@ -1,3 +1,6 @@
+body{
+  background-color: #000 ;
+}
 .blozum_chatbox,
 .blozum_chatbox * {
   font-family: "Georama", Sans-serif;
@@ -8,92 +11,105 @@
   color: #fff;
 }
 
-.blozum_button-35:hover,
+/* .blozum_button-35:hover,
 .blozum_chatbox_button button:hover {
   box-shadow: #184870 0 0 0 3px, transparent 0 0 0 0;
-}
+} */
 
 @media only screen and (min-width: 1024px) {
   .blozum_chatbox {
-      width: 100%;
-      height: 515px;
-      right: 0px;
-    }
+    width: 100%;
+    height: 636px;
+    right: 0px;
+  }
 
-    .blozum_container {
-      right: 0%;
-      width: 541px;
-      height: 597px;
-      bottom: 30px;
-      transform: translateX(-30px);
-    }
+  .blozum_container {
+    right: 0%;
+    width: 400px;
+    bottom: 30px;
+    transform: translateX(-7.5%);
+    height: 698px;
+  }
 
-    .blozum_chatbox__button {
-      right: 30px;
-      bottom: 30px;
+
+  .blozum_chatbox__button {
+    right: 30px;
+    bottom: 30px;
+  }
+  .blozum_chatbox__header {
+    border-radius: 16px 16px 0px 0px;
     }
 }
 
 @media screen and (max-height: 810px) and (min-width: 1024px) {
-    .blozum_chatbox {
-        width: 100%;
-        height: 515px;
-        right: 0px;
-      }
-    .blozum_container {
-      right: 0%;
-      width: 541px;
-      height: 597px;
-      bottom: 30px;
-      transform: translateX(-30px);
+  .blozum_chatbox {
+    width: 100%;
+    height: 636px;
+    right: 0px;
+  }
+.blozum_container {
+  right: 0%;
+  width: 400px;
+  height: 718px;
+  bottom: 30px;
+  transform: translateX(-30px);
+}
+  .blozum_chatbox__button {
+    right: 30px;
+    bottom: 30px;
+  }
+  .blozum_chatbox__header {
+    border-radius: 16px 16px 0px 0px;
     }
-        .blozum_chatbox__button {
-          right: 30px;
-          bottom: 30px;
-        }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1023px) {
   .blozum_chatbox {
     width: 100%;
-    height: 515px;
+    height: 636px;
   }
 
   .blozum_container {
     right: 0%;
-    width: 541px;
-    height: 597px;
+    transform: translateX(-7.5%);
+    width: 400px;
+    height: 705px;
     bottom: 20px;
-    transform: translateX(-5%);
   }
-
   .blozum_chatbox__button {
     right: 30px;
-      bottom: 30px;
+    bottom: 30px;
   }
+  .blozum_chatbox__header {
+    border-radius: 16px 16px 0px 0px;
+    }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 900px) {
+@media only screen and (min-width: 550px) and (max-width: 900px) {
   .blozum_chatbox {
     width: 100%;
-    height: 515px;
+    height: 636px;
   }
 
   .blozum_container {
     right: 0;
-    transform: translateX(-5%);
-    width: 541px;
-    height: 597px;
+    transform: translateX(-7.5%);
+    width: 400px;
+    height: 690px;
     bottom: 35px;
   }
 
   .blozum_chatbox__button {
     right: 30px;
-      bottom: 30px;
+    bottom: 30px;
+  }
+   
+ .blozum_chatbox__header {
+  border-radius: 16px 16px 0px 0px;
   }
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 550px) {
   .blozum_chatbox {
     width: 96%;
     /* width: 100%; */
@@ -117,6 +133,27 @@
     right: 15px;
     bottom: 35px;
   }
+}
+
+.blozum_chatbox__messages--inner2 {
+  align-self: center;
+  width: 258px;
+  height: 60px;
+  /* font-family: Inter; */
+  top: 88px;
+  left: 71px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #6a6a6a;
+  margin-bottom: 50px;
+  margin-top: 10px;
 }
 
 .blozum_image_bg {
@@ -164,7 +201,7 @@
 .blozum_button-35 {
   align-items: center;
   border-radius: 15px;
-  box-shadow: transparent 0 0 0 6px, rgba(18, 18, 18, 0.4) 0 6px 20px;
+  /* box-shadow: transparent 0 0 0 6px, rgba(18, 18, 18, 0.4) 0 6px 20px; */
   cursor: pointer;
   flex: 1 1 auto;
   font-family: "Georama", Sans-serif;
@@ -179,28 +216,34 @@
 }
 
 .send__button_BLZ {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   background-color: transparent;
-  color: #184870;
+  /* color: #184870; */
   width: calc(3em + 2px);
   height: calc(3em + 2px);
   display: flex;
-  /* Flexbox for centering */
   justify-content: center;
-  /* Center horizontally */
   align-items: center;
-  /* Center vertically */
   border: none;
-  /* Remove the default border */
   text-align: center;
   transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
   white-space: nowrap;
-  /* touch-action: manipulation; */
-  box-shadow: transparent 0 0 0 1px, rgba(18, 18, 18, 0.4) 0 1px 1.5px;
+  /* box-shadow: transparent 0 0 0 1px, rgba(18, 18, 18, 0.4) 0 1px 1.5px; */
   cursor: pointer;
   flex: 1 1 auto;
   margin: 0 0 0 8px;
 }
+
+#BLZ_input {
+  flex-grow: 1;
+  margin-right: 8px; /* Space between input and icon */
+  line-height: 1.5;
+  padding: 5px 10px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 
 .send__button_BLZ:hover {
   box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.4) 0 3px 9px;
@@ -233,7 +276,6 @@
   font-weight: 700;
 }
 
-
 .blozum_chatbox {
   position: absolute;
 }
@@ -248,7 +290,7 @@
   height: 100%;
   width: 100%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.16) 0px 5px 40px;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .blozum_chatbox--active {
@@ -268,7 +310,6 @@
     border: none
 } */
 
-
 .blozum_chatbox__messages {
   margin-top: auto;
   display: flex;
@@ -276,28 +317,22 @@
   flex-direction: column-reverse;
 }
 
-
-
 .blozum_chatbox__header {
-  background: linear-gradient(180deg, #184870 0%, #184870 100%);
+  background: #42b02b;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 12px 20px 12px 20px;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); */
   position: sticky;
-    top: 0;
-    height: 20%;
-    color: white;
-    max-height: 54px;
-    position: sticky;
-      display: flex;
-      justify-content: space-between;
-      border-radius: 12px 12px 0 0;
+  top: 0;
+  color: white;
+  height: 64px;
+  gap: 0px;
+  /* border-radius: 0px 0px 0px 0px; */
+  opacity: 0px;
 }
-
-
 
 .blozum_messages__item {
   margin-top: 10px;
@@ -309,19 +344,45 @@
   line-height: 21px;
 }
 .blozum_messages__item--operator {
+  margin: 10px;
   /* box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.2) 0 3px 5px; */
   border-radius: 8px 8px 0px 8px;
   margin-left: auto;
-  background: #35699F;
+  /* background: #35699f; */
+  background: #42B02B;
   color: #fff;
+  height: Hug (64px)px;
+  top: 144px;
+  left: 60px;
+  padding: 12px 16px 12px 16px;
+  gap: 10px;
+  border-radius: 8px 8px 0px 8px;
+  opacity: 0px;
 }
 .blozum_messages__item--typing,
 .blozum_messages__item--visitor {
-  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.2) 0 3px 5px;
+  /* box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.2) 0 3px 5px;
   margin-right: auto;
   max-width: 70%;
   border-radius: 8px 8px 8px 0px;
-  background: #EFEFEF;  
+  background: #EFEFEF;   */
+  width: 272px;
+  /* height: 64px; */
+  top: 256px;
+  left: 74px;
+  gap: 0px;
+  border-radius: 8px 8px 8px 0px;
+  opacity: 0px;
+  background: #efefef;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #134842;
 }
 
 .visitor_menu_BLZ {
@@ -351,8 +412,6 @@
   padding: 0 15px 8px;
 }
 
-
-
 .blozum_chatbox__footer {
   display: flex;
   flex-direction: row;
@@ -360,13 +419,29 @@
   justify-content: space-between;
   padding: 12px 8px;
   background: 0 0;
-  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.1); */
   border-radius: 8px;
-  margin-top: 20px;
+  margin: 5px;
+  margin-top: 10px;
   position: sticky;
-    bottom: 0;
-    height: 10.5%;
-    z-index: 999;
+  bottom: 0;
+  height: 10.5%;
+  z-index: 999;
+  margin-bottom: 10px;
+}
+
+.innerfooterdiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+  border-radius: 16px;
+  border: 1px solid #D0D0D0;
+  background: #fff;
+  opacity: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .blozum_chatbox__footer .blz_input {
@@ -378,6 +453,19 @@
   text-align: left;
   color: #000;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+}
+
+#BLZ_input {
+  flex-grow: 1;
+        margin-right: 8px; /* Space between input and icon */
+        line-height: 1.5;
+        padding: 5px 10px;
+}
+
+#BLZ_input::placeholder {
+  color: #D0D0D0; 
+  opacity: 1;
 }
 
 .blozum_chatbox__send--footer {
@@ -386,15 +474,15 @@
 
 .blozum_chatbox__button button {
   padding: 0px;
-  background: #184870;
-  border-radius: 72px 0 72px 72px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  /* background: #184870; */
+  /* border-radius: 72px 0 72px 72px; */
+  /* box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5); */
   cursor: pointer;
   outline: none;
 }
 
 .blozum_chatbox_button button:hover {
-  background-color: #184870;
+  /* background-color: #184870; */
   color: #fff;
 }
 
@@ -404,8 +492,7 @@
   display: block;
   unicode-bidi: isolate;
   pointer-events: all;
-  transition: margin 0.3s ease-out 0s,
-    opacity 0.3s ease-out 0s;
+  transition: margin 0.3s ease-out 0s, opacity 0.3s ease-out 0s;
   z-index: 2147483002;
 }
 
@@ -631,13 +718,13 @@
   border-radius: 10px;
   z-index: 1000;
   display: flex;
-    /* Added for vertical centering */
-    justify-content: center;
-    /* Centers content horizontally */
-    align-items: center;
-    /* Centers content vertically */
-    padding: 10px;
-    /* Optional, for some internal spacing */
+  /* Added for vertical centering */
+  justify-content: center;
+  /* Centers content horizontally */
+  align-items: center;
+  /* Centers content vertically */
+  padding: 10px;
+  /* Optional, for some internal spacing */
 }
 
 .after_submission_BLZ {
@@ -667,7 +754,7 @@
   text-align: left;
   color: #000;
   margin: 0 0 6px;
-      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .blozum_message-reaction {
@@ -687,12 +774,12 @@
 .blozum_thumb-down {
   cursor: pointer;
   outline: none;
-  border-color: #35699F;
-    padding: 6px 10px 6px 10px;
-    gap: 10px;
-    border-radius: 8px;
-    border-width: 0.5px;
-    opacity: 0px;
+  border-color: #35699f;
+  padding: 6px 10px 6px 10px;
+  gap: 10px;
+  border-radius: 8px;
+  border-width: 0.5px;
+  opacity: 0px;
   width: 34px;
   height: 26px;
   font-size: 12px;
@@ -727,9 +814,6 @@
   border-width: thin;
   outline: none;
 }
-
-
-
 
 #blz_form_error {
   background-color: #ffcccc;
@@ -853,7 +937,8 @@
   outline: none;
 }
 
-.buynow:hover, .hdcarousel_item:hover {
+.buynow:hover,
+.hdcarousel_item:hover {
   background-color: #184870;
   color: "white";
   outline: none;
@@ -878,7 +963,7 @@
 }
 
 .blozum_mobile_view_close_btn {
-  display: none;
+  display: hidden;
 }
 
 .blz_icebreakers_container {
@@ -894,7 +979,8 @@
 }
 
 .blz_icebreaker {
-  background: #35699f;
+  /* background: #35699f; */
+  background: #42B02B;
   padding: 10px;
   color: #fff;
   margin: 3px;
@@ -906,33 +992,40 @@
 
 .blz_icebreaker:hover {
   cursor: pointer;
-  background: #184870;
+  /* background: #184870; */
+  background: #348225;
   color: #f2f2f2;
 }
 
 .blz_init_icebreaker {
-  border: 1px solid #184870;
-  color: #184870;
   font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
   margin: 7px;
-    padding: 6px 10px 6px 10px;
-    gap: 10px;
-    border-radius: 8px 8px 0px 8px;
-    opacity: 0px;
-  transition: font-weight 0.1s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  padding: 6px 10px 6px 10px;
+  gap: 10px;
+  border-radius: 8px 8px 0px 8px;
+  opacity: 0px;
+  transition: font-weight 0.1s ease, transform 0.3s ease, background 0.3s ease,
+  box-shadow 0.3s ease;
+  border: 1px solid #134842;
+  color: #134842;
+  padding: 12px 16px 12px 16px;
+  gap: 10px;
+  border-radius: 8px 8px 0px 8px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
 }
 
 .blz_init_icebreaker:hover {
-  background: linear-gradient(180deg, #184870 0%, #184870 100%);
+  background: #42b02b;
+  border: 1px solid #42b02b;
   cursor: pointer;
   transform: scale(1.02);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05),
-    0 20px 25px -5px rgba(0, 0, 0, 0.2),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 20px 25px -5px rgba(0, 0, 0, 0.2),
     0 8px 10px -6px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
@@ -994,7 +1087,6 @@
     z-index: 0;
   }
 
-
   .blozum_mobile_view_close_btn {
     display: flex;
     justify-content: center;
@@ -1049,8 +1141,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s, transform 0.2s; 
-   border-bottom-left-radius: 24px;
+  transition: background-color 0.3s, transform 0.2s;
+  border-bottom-left-radius: 24px;
   border-bottom-right-radius: 16px;
   border-top-left-radius: 16px;
   border-top-right-radius: 4px;
@@ -1087,7 +1179,7 @@
   /* Smaller border-radius for aesthetics */
   background: #f0f0f0;
   /* Lighter background to differentiate from main buttons */
-  color: #333;  /* Darker text for contrast */
+  color: #333; /* Darker text for contrast */
   cursor: pointer;
   /* Cursor as pointer to indicate clickable */
   border: 1px solid #ccc;
@@ -1188,7 +1280,6 @@
   width: max-content;
   margin: 0 auto;
   z-index: 999000;
-
 }
 
 .hdcarousel_nav_item {
