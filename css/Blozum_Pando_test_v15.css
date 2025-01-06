@@ -752,6 +752,7 @@
   margin: 10px auto;
   font-weight: bold;
   font-size: 16px;
+  width: 100%;
   /* background: #fff; */
   /* color: #000; */
   /* width: 80%; */
@@ -782,6 +783,7 @@
 }
 
 .flex-blozum_container {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   margin-top: 24px;
@@ -789,6 +791,7 @@
 }
 
 .blz_input {
+  width: 100% !important;
   border: none;             /* Remove border */
   outline: none;            /* Remove outline on focus */
   background: transparent;  /* Make background transparent */
